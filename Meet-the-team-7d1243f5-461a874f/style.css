@@ -1,0 +1,72 @@
+/* Exercise is afgekeurd met de opmerkingen:
+(1) er wordt gebruik gemaakt van fixed hoogtes en breedtes; 
+echter staat in de opdracht "Ook worden er geen vaste/fixed dimensies meegegeven aan de afbeeldingen."; 
+hier heb ik me aan gehouden.
+(2) de volledige color.png wordt getoond ipv een enkele kleur per persoon;
+als ik de html in mijn browser open, zie ik wel gewoon een kleur per persoon (zie screenshot). */
+
+h1 {text-align: center;}
+
+h3 {
+    margin-top: 10px;
+    margin-bottom:0px;
+}
+
+.collegas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+div.collega {
+    background-color:#f7fcee;
+    padding:15px;
+    border-radius: 8px;
+    margin:10px;
+    width:12%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+div.avatar {
+    width:100%;
+}
+
+img:nth-child(2) {
+   padding:10px;
+}
+
+
+.collega:nth-child(1) div img {
+    border-radius: 8px;
+    width:100%;
+}
+
+.collega:nth-child(2) div img {
+    border-radius: 8px;
+    width:100%;
+}
+
+.collega:nth-child(3) div img {
+    border-radius: 8px;
+    width:100%;
+}
+
+ul {
+    padding-right:20px;
+}
+
+.collega:nth-child(2) img:nth-child(2){
+    object-position: right;
+}
+
+.collega:nth-child(3) img:nth-child(2){
+    object-position: left;
+}
