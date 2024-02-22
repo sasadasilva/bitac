@@ -1,0 +1,30 @@
+.content {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    border-radius:45px;
+    background-color:antiquewhite;
+    padding:10px;
+}
+
+#liked {
+    width:45px;
+}
+
+#disliked {
+    width:40px;
+}
+
+#buttons {
+    display:flex;
+}
+
+#dogimg {
+    height:400px;
+}
